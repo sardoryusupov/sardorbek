@@ -1,0 +1,357 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+       url('../fonts/open-sans-v29-latin-regular.woff2') format('woff2'),
+       url('../fonts/open-sans-v29-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src:
+       url('../fonts/open-sans-v29-latin-700italic.woff2') format('woff2'),
+       url('../fonts/open-sans-v29-latin-700italic.woff') format('woff');
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.input, textarea {
+  outline: none;
+}
+
+.container {
+  width: 1300px;
+  padding: 0px 100px;
+  margin: 0px auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.header {
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.header-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.li-link{
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: black;
+  padding: 20px 15px;
+  border-bottom: 2px solid transparent;
+}
+
+.li-link:hover {
+  border-bottom: 2px solid black;
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.li-link:active {
+  background-color: #5E5E5E;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+
+}
+
+.link-ul {
+  display: none;
+  position: absolute;
+  z-index: 50;
+  top: 65px;
+  left: 500px;
+  list-style: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.link-li {
+  padding: 10px 0px 10px 8px;
+}
+
+.a-link {
+  width: 120px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.a-link:hover {
+  background-color: #00BAFC;
+  color: #fff;
+}
+
+.button-number {
+  padding: 8px 0px;
+  width: 160px;
+  border-radius: 5px;
+  background-color: #00BAFC;
+  color: #fff;
+  border: 2px solid #00BAFC;
+  cursor: pointer;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.button-number:hover {
+  border: 2px solid #00BAFC;
+  color: #00BAFC;
+  background-color: #fff;
+}
+
+.button-number:active {
+  background-color: rgb(0, 186, 252, 0.6);
+  color: #fff;
+  border: 2px solid rgb(0, 186, 252, 0.6);
+}
+
+/* header qismi tugadi */
+
+/* 1-section ochildi  */
+
+
+.intro {
+  display: flex;
+  padding-top: 105px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-comment {
+  width: 465px;
+}
+
+.intro-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.title-text1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.intro-btn {
+  border: 2px solid #00B5F5;
+  color: #fff;
+  padding: 8px 0px;
+  background-color: #00B5F5;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  width: 230px;
+  border-radius: 5px;
+}
+
+.intro-btn:hover {
+  border: 2px solid rgb(0, 181, 245, 0.8);
+  color: #fff;
+  background-color: rgb(0, 181, 245, 0.8);
+}
+
+.intro-btn:active {
+  background-color: rgb(0, 181, 245, 0.6);
+  border: 2px solid rgb(0, 181, 245, 0.2);
+  color: #fff;
+}
+
+.youtube {
+  border-radius: 5px;
+}
+/* 1-section tugadi */
+/* 2-section boshlandi  */
+
+.div {
+  padding-bottom: 150px;
+}
+
+.ctg-title-1 {
+  text-align: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.ctg-div {
+  width: 719px;
+  margin: 0px auto;
+}
+
+.ctg-text {
+  text-align: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.ctg-ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.ctg-li {
+  width: 320px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0px 20px 20px 20px;
+  text-align: center;
+}
+
+.ctg-li1 {
+  width: 320px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0px 20px 20px 200px;
+  text-align: center;
+}
+
+.ctg-li:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ctg-li:active {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.ctg-li1:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ctg-li1:active {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.ctg-link {
+  width: 100%;
+  display: inline-block;
+  padding: 24px;
+  text-decoration: none;
+}
+
+
+.ctg-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  margin: 16px 0px;
+  color: black;
+}
+
+.title-text {
+  text-align: center;
+  color: black;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn-div {
+  text-align: center;
+}
+
+.buyurtma-btn {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0px;
+  width: 180px;
+  background-color: #00BAFC;
+  border-radius: 5px;
+  border: #00BAFC;
+  color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.xizmat-link{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00B5F5;
+}
